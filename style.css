@@ -71,14 +71,39 @@ div#formulario > p{
 }
 
 /* Aqui vai as configurações dos campos EMAIL E SENHA*/
-form div#campo{
-    background-color: #5f2c82;
+form > div#campo{
+  /*  background-color: #5f2c82;*/
     display: block;
     width: 100%;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
 
+}
+
+/*Aquei vai as configurações dos icones email e senha*/
+div#campo > span{
+    color: white;
+    background-color:#49a09d;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Aqui vai as configurões das caixas do Form email e senha*/
+div#campo > input{
+   /* background-color: #94cfcd;*/
+   font-size: 1em;
+   /*width: calc(100% -44px); para deskto configuracao*/
+    width: 80%;
+    height: 100%;
+    /*border: 0px;*/
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0px;
+    transform: translateY(-10px);
+   
 }
 
 /* Aqui vai as configuraçoes dos botoes ENTRAR E ESQUECI A SENHA */
@@ -92,6 +117,7 @@ form > input[type=submit]{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 form > input[type=submit]:hover {
